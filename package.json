@@ -1,0 +1,25 @@
+{
+  "name": "react-custom-hook",
+  "version": "1.0.0",
+  "description": "custom hook for react",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thanle95/react-custom-hook.git"
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "custom",
+    "hook"
+  ],
+  "author": "Le Ngoc Than <lengocthan95@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thanle95/react-custom-hook/issues"
+  },
+  "homepage": "https://github.com/thanle95/react-custom-hook#readme"
+}
