@@ -1,2 +1,2 @@
-const useIsMounted = require("react-custom-hooked");
-console.log(useIsMounted());
+import { useIsMounted, useRefresh } from "react-custom-hooked";
+console.log(useIsMounted, useRefresh);

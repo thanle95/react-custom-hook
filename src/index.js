@@ -1,4 +1,21 @@
-function isWds(string) {
-  return string === "WDS";
+import { useCallback, useEffect, useRef } from "react";
+
+export function useIsMounted() {
+  const isMountedRef = useRef(true);
+  const isMounted = useCallback(() => isMountedRef.current, []);
+
+  useEffect(() => {
+    return () => void (isMountedRef.current = false);
+  }, []);
+
+  return isMounted;
 }
-export * from "./UseIsMounted.jsx";
+export function useRefresh() {
+  const [, setVersion] = React.useState(0);
+  const isMounted = useIsMounted();
+  return () => {
+    if (isMounted()) {
+      setVersion((x) => x + 1);
+    }
+  };
+}

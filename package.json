@@ -1,8 +1,9 @@
 {
   "name": "react-custom-hooked",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "custom hook for react",
   "main": "src/index.js",
+  "type": "module",
   "scripts": {
     "dev": "node_modules/webpack/bin/webpack.js --mode production --watch --progress --hide-modules",
     "build": "node_modules/webpack/bin/webpack.js --mode production --progress --hide-modules"

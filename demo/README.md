@@ -1,5 +1,6 @@
 # run demo
 
+0. npm link
 1. cd ./demo
 2. npm link react-custom-hooked
 3. node script.js
